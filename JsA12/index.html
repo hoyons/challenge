@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ToDo by RBs</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="home">
+      <button id="logout" class="hidden">Log Out</button>
+      <div id="login" class="display">
+        <h3>To Do List</h3>
+        <div class="login_head">Log In</div>
+        <form id="login_form">
+          <h4>ID</h4>
+          <input type="text" id="user_id" placeholder="ID" required />
+          <h4>Password</h4>
+          <input type="password" id="user_pw" placeholder="Password" required />
+          <input type="submit" id="login_submit" value="Submit" />
+        </form>
+      </div>
+      <div id="todo" class="hidden">
+        <form id="todo_form">
+          <h3>To Do List</h3>
+          <input
+            type="text"
+            id="todo_input"
+            required
+            placeholder="Write & Enter"
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <div id="calender" class="hidden">
+        <div>
+          <link
+            href="https://fonts.googleapis.com/css?family=Orbitron"
+            rel="stylesheet"
+            type="text/css"
+          />
+          <div id="clock2" style="font-family: 'Orbitron', sans-serif"></div>
+        </div>
+        <div class="today"></div>
+        <div class="calender_start">
+          <div class="cal" style="color: red">SUN</div>
+          <div class="cal">MON</div>
+          <div class="cal">TUE</div>
+          <div class="cal">WED</div>
+          <div class="cal">THU</div>
+          <div class="cal">FRI</div>
+          <div class="cal" style="color: blue">SAT</div>
+        </div>
+        <div class="cal_body"></div>
+        <div class="weather2"></div>
+      </div>
+      <footer id="footer">
+        <div id="clock1"></div>
+        <div id="weather"><span></span><span></span></div>
+      </footer>
+    </div>
+    <script src="js/index.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/calender.js"></script>
+    <script src="js/background.js"></script>
+  </body>
+</html>

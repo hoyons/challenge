@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.display {
+  display: flex;
+}
+
+#home {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#login {
+  width: 300px;
+  height: 400px;
+  color: white;
+  text-shadow: 3px 3px 3px #444;
+  background-color: rgba(80, 80, 80, 0.8);
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.login_head {
+  margin: 0;
+  padding: 10px;
+  font-size: 25px;
+  color: tomato;
+}
+
+#login_form {
+  margin-top: 20px;
+  width: 70%;
+}
+
+#user_id,
+#user_pw,
+#todo_input {
+  width: 100%;
+  height: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-top: 10px;
+  border: 4px solid;
+  border-color: #333;
+  border-radius: 16px;
+}
+
+#login_submit {
+  width: 100%;
+  color: rgb(244, 237, 225);
+  background-color: rgb(69, 130, 138);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 60px 10px 60px;
+  margin: 20px 0px 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+#login_submit:active {
+  color: #333;
+  background-color: tomato;
+  transition: all 0.1s;
+}
+
+/*여러개 일때, 게속 밑려 생김 >> 숨기기? */
+#todo {
+  width: 40%;
+  min-width: 300px;
+  height: 80%;
+  max-height: 500px;
+  padding: 20px;
+  margin: 10px;
+  color: white;
+  text-shadow: 3px 3px 3px #444;
+  background-color: rgba(80, 80, 80, 0.8);
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#todo_form {
+}
+
+#todo_button {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px 4px 8px;
+  margin: 4px;
+}
+
+#calender {
+  width: 40%;
+  min-width: 340px;
+  height: 80%;
+  min-height: 450px;
+  max-height: 500px;
+  padding: 20px;
+  margin: 20px;
+  background-color: rgba(80, 80, 80, 0.8);
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.today {
+  width: 80%;
+  padding: 10px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+}
+
+.calender_start,
+.cal_body {
+  width: 100%;
+  min-width: 300px;
+  height: 50%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: center;
+}
+
+/*덮어쓰기?*/
+.calender_start {
+  height: 40px;
+}
+
+.cal {
+  width: 14%;
+  min-width: 36px;
+  height: 30px;
+  margin: 5px
+  font-size: 50%;
+  text-align: center;
+  background-color: honeydew;
+  border: #222 solid;
+  border-radius: 2px;
+  padding: 1px;
+  transition: all .6s;
+}
+
+.cal:hover {
+  background-color: #777;
+}
+
+.weather2 {
+  width: 80%;
+  padding: 10px;
+  margin: 50px;
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  background-color: #444;
+  border: #777 solid;
+  border-radius: 12px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+
+#clock2 {
+  width: 180px;
+  padding: 4px 12px;
+  margin: 10px;
+  color: black;
+  font-size: 20px;
+  font-family: "digital-clock-font";
+  src: url("/src/digital-7.ttf");
+  background-color: PowderBlue;
+  border-radius: 8px;
+}
+
+#logout {
+  border-radius: 3px;
+  border: none;
+  padding: 8px;
+  background-color: rgba(80, 80, 80, 0.8);
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+  transition: all 0.4s;
+}
+
+#logout:hover {
+  background-color: rgba(139, 0, 0, 0.5);
+}
+
+#logout:active {
+  color: black;
+  background-color: rgba(99, 162, 221, 0.8);
+}
+
+footer {
+  border-radius: 3px;
+  padding: 8px;
+  background-color: rgba(80, 80, 80, 0.8);
+  box-shadow: 0px 0px 6px 4px rgba(80, 80, 80, 0.8);
+  color: white;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 20px;
+}
